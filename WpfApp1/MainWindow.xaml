@@ -7,7 +7,24 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Content="Next" HorizontalAlignment="Left" Height="100" Margin="276,153,0,0" VerticalAlignment="Top" Width="291" Click="Button_Click"/>
+        <Menu Height="25" VerticalAlignment="Top">
+            <MenuItem Header="Файл" Height="25">
+                <MenuItem.Icon>
+                    <Image Source="\\sysprofiles.adm.vvsu.ru\STUDENTRPROFILES$\Anna_Petrenko\Downloads\d.jpg" Width="36"></Image>
+                </MenuItem.Icon>
+                <MenuItem Header="Открыть">
+                    <MenuItem Click="MenuItem_Click_1"></MenuItem>
+                </MenuItem>
+                <MenuItem Header="Сохранить"></MenuItem>
+                <Separator/>
+                <MenuItem Header="Выйти" Click="MenuItem_Click"></MenuItem>
+            </MenuItem>
+        </Menu>
+        <Button Content="Далее" HorizontalAlignment="Left" Height="55" Margin="285,347,0,0" VerticalAlignment="Top" Width="219" Click="Button_Click"/>
+        <Button Content="Вход" HorizontalAlignment="Left" Height="59" Margin="599,343,0,0" VerticalAlignment="Top" Width="121"/>
+        <Image Name="DisplayImage" HorizontalAlignment="Left" Height="195" Margin="90,81,0,0" VerticalAlignment="Top" Width="225"/>
+        <TextBox Name ="TextBlock" HorizontalAlignment="Left" Height="28" Margin="599,53,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="144"/>
+
 
     </Grid>
 </Window>
